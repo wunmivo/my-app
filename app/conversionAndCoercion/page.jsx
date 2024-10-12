@@ -17,13 +17,26 @@ const conversionAndCoercion = () => {
         const hobbies = ['Reading', 'Swimming', 'Skydiving'];
 
 
-        //Task 4
+        //Task 4a
         const school = {
             name: "Bolly college",
             color: "blue",
             location: undefined
         }
 
+        //Task 4b
+        const school = {
+            name: undefined,
+            color: "blue",
+            location: "Abuja"
+        }
+
+        //Task 4c
+        const school = {
+            name: "Bolly college",
+            color: undefined,
+            location: "Abuja"
+        }
 
 
   return (
@@ -58,8 +71,17 @@ const conversionAndCoercion = () => {
 
         {/* Task 4 */}
         <h2>Optional chaining operator or nullish coalescing operator</h2>
-        {school?. location?? "The school has no location"}
-        
+        {school?.location?? "The school has no location"}  <br />
+
+        {/* Task 4b */}
+        <h2>Optional chaining operator or nullish coalescing operator</h2>
+        {school?.name?? "The school has no name"} <br />
+
+        {/* Task 4c */}
+        <h2>Optional chaining operator or nullish coalescing operator</h2>
+        {school?.color?? "The school has no color"} <br />
+
+
 
     </div>
   )
